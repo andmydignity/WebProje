@@ -1,3 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+/* Proje ana dizinindeki ve alt klasörlerdeki PHP dosyalarını tara */
+@source "../**/*.php";
+
+@layer base {
+  a {
+    text-decoration: none !important;
+  }
+}

@@ -22,8 +22,7 @@
                 <li>Yazılım (özellikle Backend/ML)</li>
                 <li>Tarih</li>
                 <li>3D yazıcılar</li>
-                <li>Ekzantirik müzikler</li>
-                <li>...?</li>
+                <li>Ekzantirik müzikler (Özellikle <a href="https://tr.wikipedia.org/wiki/Breakcore">Breakcore</a> ve <a href="https://tr.wikipedia.org/wiki/Chiptune">Chiptune</a>)</li>
               </ul>
             </article>
         </section>
@@ -31,14 +30,10 @@
 
         <div>
           <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvZGFnZXxlbnwwfHwwfHx8MA%3D%3D" alt="Alakası olmamasına rağmen medya koşulunu sağlamak için yerleştirilmiş kod görseli." class="w-full rounded-2xl">
-          <sub class="text-center">Medya koşulunu sağlamak için eklenmiş alakasız bilgisayar görseli.</sub>
+          <sub class="text-center">Alakasız bilgisayar görseli.</sub>
         </div>
       </div>
-      <div>
-        <audio controls>
-          <source src="https://mp3indirdur.life/rick-astley-never-gonna-give-you-up-130881?dinle=1">
-        </audio>
-      </div> 
+       
     </div>
 
   

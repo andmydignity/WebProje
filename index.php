@@ -12,7 +12,7 @@
       <div class="grid grid-cols-1 gap-y-2 md:grid-cols-2 md:grid-rows-1 py-5">
         <div class="items-center">
           <section>
-          <h2 class="text-3xl p-2 text-center">
+          <h2 class="text-3xl font-bold p-2 text-center">
             Ahmet Semih Aslan
           </h2>
           <article>

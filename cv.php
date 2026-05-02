@@ -19,6 +19,12 @@
       </section>
       <hr>
       <section class="text-center py-2">
+        
+        <h2 class="text-2xl py-2">Eğitim</h2>
+        <article class="text-center"><p>Bilgisayar Mühendisliği, Sakarya Üniversitesi (2025-2029)</p></article>
+      </section>
+      <hr> 
+      <section class="text-center py-2">
         <h2 class="text-2xl py-2">Tecrübeler</h2>
         <ul class="list-disc text-justify space-y-1">
           <li>
@@ -55,7 +61,7 @@
         <p> <a href="tel:+905616175397"> +90 561 617 5397</a> veya <a href="mailto:ahmetaslan139@outlook.com.tr">ahmetaslan139@outlook.com.tr</a> üzerinden ulaşabilirsiniz.</p>
       </section>
       <hr>
-      <sub>Bilgilerin gerçek olmasına rağmen ciddi amaçlı yazılan bir CV değildir. Daha küçük ölçekli projeler yazılmamıştır. CV'nin iyi olmadığının ve iyi yazılmadığının farkındayım.</sub>
+      <sub>Bilgilerin gerçek olmasına rağmen ciddi amaçlı yazılan bir CV değildir. Daha küçük ölçekli projeler yazılmamıştır.</sub>
     </div>
     
 

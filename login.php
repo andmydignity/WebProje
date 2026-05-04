@@ -9,13 +9,11 @@
   <?php include "includes/header.php";?>
     <h1 class="text-2xl text-center">Giriş Sayfası</h1>
     <div class="max-w-3xs mx-auto py-2"> 
-    <form method="POST" action="login_process.php">
-      <div class="grid grid-rows-3 text-center">
-      <input name="email" type="email" class="border-2 border-gray-200 rounded-xl py-1 my-2" required placeholder="E-posta">
-      <input name="password" type="password" class="border-2 border-gray-200 rounded-xl py-1 my-2" required placeholder="Şifre">
-      <input type="submit" class="py-1 border-2 border-gray-200 rounded-xl my-2 w-max justify-self-center" value="Giriş Yap">
-      </div> 
-    </form> 
+    <form method="POST" class="flex flex-col justify-self-center items-center space-y-2" action="login_process.php">
+      <input name="email" type="email" class="border-2 border-gray-200 rounded-xl p-1" required placeholder="E-posta">
+      <input name="password" type="password" class="border-2 border-gray-200 rounded-xl p-1" required placeholder="Şifre">
+      <input type="submit" class="p-1 border-2 border-gray-200 rounded-xl w-max justify-self-center" value="Giriş Yap">
+      </form> 
     </div>
   <?php include "includes/footer.php";?>
   </body>

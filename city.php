@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <script>
     let currentIndex = 0;
-    const totalSlides = 4; // En az 4 resim şartı
-
+    const totalSlides = 4;
     function updateSlider() {
       const slider = document.getElementById('slider');
-      // Her resim %100 genişlikte olduğu için index * 100 kadar kaydırıyoruz
       slider.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
 

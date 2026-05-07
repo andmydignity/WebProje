@@ -14,7 +14,6 @@
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-3xs: 16rem;
-    --container-2xs: 18rem;
     --container-xs: 20rem;
     --container-xl: 36rem;
     --container-3xl: 48rem;
@@ -240,20 +239,11 @@
   .w-max {
     width: max-content;
   }
-  .max-w-3 {
-    max-width: calc(var(--spacing) * 3);
-  }
-  .max-w-3xl {
-    max-width: var(--container-3xl);
-  }
   .max-w-3xs {
     max-width: var(--container-3xs);
   }
   .max-w-4xl {
     max-width: var(--container-4xl);
-  }
-  .max-w-xl {
-    max-width: var(--container-xl);
   }
   .max-w-xs {
     max-width: var(--container-xs);
@@ -283,9 +273,6 @@
   .grid-rows-1 {
     grid-template-rows: repeat(1, minmax(0, 1fr));
   }
-  .grid-rows-3 {
-    grid-template-rows: repeat(3, minmax(0, 1fr));
-  }
   .flex-col {
     flex-direction: column;
   }
@@ -294,9 +281,6 @@
   }
   .justify-between {
     justify-content: space-between;
-  }
-  .justify-center {
-    justify-content: center;
   }
   .space-y-1 {
     :where(& > :not(:last-child)) {
@@ -369,9 +353,6 @@
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
-  }
-  .py-1 {
-    padding-block: calc(var(--spacing) * 1);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);

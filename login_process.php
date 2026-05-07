@@ -10,17 +10,16 @@
     <div class="text-center">
       <h1 class="text-2xl">Giriş Sonucu</h1>
       <?php
-      $email = htmlspecialchars($_POST['email']);
-      $password = htmlspecialchars($_POST['password']);
-      if ($email == "b251210042@sakarya.edu.tr" && $password == "b251210042") {
-        echo "Hoş geldiniz b251210042";
-      }
-      else{
-        echo "Hatalı giriş bilgileri, geri yönlendiriliyorsunuz.";
-        header("Refresh: 3; url=login.php");
-        die();
-      }
-      ?>
+        $email = htmlspecialchars($_POST['email']);
+        $password = htmlspecialchars($_POST['password']);
+        if ($email == "b251210042@sakarya.edu.tr" && $password == "b251210042") {
+            echo "Hoş geldiniz b251210042";
+        } else{
+            echo "Hatalı giriş bilgileri, geri yönlendiriliyorsunuz.";
+            header("Refresh: 3; url=login.php");
+            die();
+        }
+        ?>
       <?php include "includes/footer.php";?>
     </div>
 

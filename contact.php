@@ -23,13 +23,18 @@
       }
       else if (nokta<1){
         window.alert("Email'de . yok !");
+        return false;
       }
       else if (etIsaret!==1){
         window.alert("Email'de bir tane @ olmalı!");
+        return false;
       }
-      else if (/\p{L}/u.test(tel)){
-        window.alert("Telefon numarasında harf var!");
-      }}
+      else if (/\D/.test(tel)){
+        window.alert("Telefon numarası sadece numaralardan oluşmalıdır!");
+        return false;
+      }
+      return true;
+      }
     </script>
   </head>
   <body class="bg-neutral-800 text-white">
@@ -37,7 +42,7 @@
     <div class="container mx-auto">
       <h1 class="text-3xl text-center py-2">İletişim Formu</h1>
       <div id="app" class="max-w-xs mx-auto py-2">
-        <form method="POST" class="flex flex-col justify-self-center items-center space-y-2" name="form" action="contact_process.php" >
+        <form method="POST" class="flex flex-col justify-self-center items-center space-y-2" name="form" action="contact_process.php" onsubmit="return kontrol()" >
           <select required name="tur">
             <option value="sikayet">Şikayet</option>
             <option value="oneri">Öneri</option>
@@ -52,7 +57,7 @@
           <button type="button" onclick="kontrol()" class="p-1 border-2 border-gray-200 rounded-xl my-2 w-max justify-self-center" >Kontrol et (JS)</button>
           <button type="button" @click="kontrolVue" class="p-1 border-2 border-gray-200 rounded-xl my-2 w-max justify-self-center" >Kontrol et (Vue)</button>
           </div>
-          <input type="submit" value="Gönder" onclick="" class="p-1 border-2 border-gray-200 rounded-xl w-max justify-self-center" >
+          <input type="submit" value="Gönder" class="p-1 border-2 border-gray-200 rounded-xl w-max justify-self-center" >
         </form>
       </div>
     
@@ -77,8 +82,8 @@
             window.alert("Email'de . yok !");
           } else if (etIsaret!==1){
             window.alert("Email'de bir tane @ olmalı!");
-          } else if (/\p{L}/u.test(tel.value)) {
-            window.alert("Telefon numarasında harf var!");
+          } else if (/\D/.test(tel.value)) {
+            window.alert("Telefon numarasında sadece rakam olmalı!");
           }  
         }
         return{
@@ -92,6 +97,5 @@
   </script>
   </body>
 </html>
-```
 
 

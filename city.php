@@ -92,8 +92,8 @@
 
           </section>
         </div>
-      <div class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-2xl shadow-2xl">
-        <div id="slider" class="flex rounded-2xl transition-transform duration-500 ease-in-out">
+      <div class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-2xl shadow-2xl h-fit self-center ">
+          <div id="slider" class="flex w-full rounded-2xl transition-transform duration-500 ease-in-out">
             <img src="https://web-cdnprod.aa.com.tr/uploads/Contents/2022/07/04/thumbs_b_c_894ee66e5dd61dcba4f12ed077d4f35e.jpg?v=214606" class="w-full shrink-0 aspect-video object-cover" alt="Harput kalesi">
             <img src="https://gezimanya.com/sites/default/files/styles/800x600_/public/gezilecek-yerler/2019-11/image-3gJ3q2Rz.jpg" class="w-full shrink-0 aspect-video object-cover" alt="Yine Harput kalesi">
             <img src="https://www.kulturportali.gov.tr/contents/images/20171103134354731_ELAZIG%20113%20HARPUT%20KALESI%20SERVET%20UYGUN.jpg" class="w-full shrink-0 aspect-video object-cover" alt="Bidaha Harput kalesi">

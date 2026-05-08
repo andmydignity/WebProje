@@ -1,3 +1,16 @@
+<?php
+// API'den JSON verisi çekme işlemi
+$apiUrl = "https://api.thecatapi.com/v1/images/search";
+$response = @file_get_contents($apiUrl);
+$catImageUrl = "https://cataas.com/cat"; // API başarısız olursa yedek görsel
+
+if ($response) {
+    $data = json_decode($response, true);
+    if (!empty($data) && isset($data[0]['url'])) {
+        $catImageUrl = $data[0]['url'];
+    }
+}
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -28,9 +41,9 @@
         </section>
         </div>
 
-        <div>
-          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvZGFnZXxlbnwwfHwwfHx8MA%3D%3D" alt="Alakası olmamasına rağmen medya koşulunu sağlamak için yerleştirilmiş kod görseli." class="w-full rounded-2xl">
-          <sub class="text-center">Alakasız bilgisayar görseli.</sub>
+        <div class="w-full flex flex-col items-center justify-center">
+          <img src="<?php echo htmlspecialchars($catImageUrl); ?>" alt="Rastgele kedi fotoğrafı." class=" max-h-96 rounded-2xl w-auto object-contain">
+          <sub class="text-center mt-2">Rastgele bir kedi fotoğrafı.</sub>
         </div>
       </div>
        

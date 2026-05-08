@@ -15,8 +15,6 @@
     --spacing: 0.25rem;
     --container-3xs: 16rem;
     --container-xs: 20rem;
-    --container-xl: 36rem;
-    --container-3xl: 48rem;
     --container-4xl: 56rem;
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
@@ -224,6 +222,9 @@
   .my-2 {
     margin-block: calc(var(--spacing) * 2);
   }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
   .flex {
     display: flex;
   }
@@ -232,6 +233,24 @@
   }
   .aspect-video {
     aspect-ratio: var(--aspect-video);
+  }
+  .h-7 {
+    height: calc(var(--spacing) * 7);
+  }
+  .h-fit {
+    height: fit-content;
+  }
+  .h-full {
+    height: 100%;
+  }
+  .max-h-1\/2 {
+    max-height: calc(1 / 2 * 100%);
+  }
+  .max-h-96 {
+    max-height: calc(var(--spacing) * 96);
+  }
+  .w-auto {
+    width: auto;
   }
   .w-full {
     width: 100%;
@@ -281,6 +300,9 @@
   }
   .justify-between {
     justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
   }
   .space-y-1 {
     :where(& > :not(:last-child)) {
@@ -332,6 +354,9 @@
   }
   .bg-neutral-800 {
     background-color: var(--color-neutral-800);
+  }
+  .object-contain {
+    object-fit: contain;
   }
   .object-cover {
     object-fit: cover;

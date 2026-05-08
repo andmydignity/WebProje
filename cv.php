@@ -29,8 +29,8 @@
         <ul class="list-disc text-justify space-y-1">
           <li>
             <article>
-            <span class="font-bold">CMS (Content Management System):</span><p>Belirlenen bir dizindeki Markdown dosyalarının otomatik olarak web sayfalarına dönüştürülerek kullanıcalara servis eden statik içerik yönetim sistemi.
-              Dizindeki değişikleri dosya sistemi olayları ile takip edip web sayfalarıyla senkron etme, ACME doğrulaması ile otomatikmen TLS sertifikalarının edinilmesi, Brotli ile sayfaların sıkıştırılması, Middleware ile istek sınırlama, Web sayfalarında ETag ile gereksiz işlemlerden kaçınma gibi özellikler barındırmaktadır.
+            <span class="font-bold"> ScorialCMS (Content Management System):</span><p>Belirlenen bir dizindeki Markdown dosyalarının otomatik olarak web sayfalarına dönüştürülerek kullanıcalara servis eden statik içerik yönetim sistemi.
+              Dizindeki değişikleri dosya sistemi olayları ile takip edip web sayfalarıyla senkron etme, ACME doğrulaması ile otomatikmen TLS sertifikalarının edinilmesi, Brotli ile sayfaların sıkıştırılması, Middleware ile istek sınırlama, Otomatik Atom feed üretimi, Web sayfalarında ETag ile gereksiz işlemlerden kaçınma gibi özellikler barındırmaktadır.
               Ortalama TTFB, Wordpress'e kıyasla %75 daha azdır. Gelişim süreci devam ettikçe özellikler ve performans artmaktadır. 
             </p></article>
           </li>

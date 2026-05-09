@@ -16,7 +16,7 @@
             echo "Hoş geldiniz b251210042";
         } else{
             echo "Hatalı giriş bilgileri, geri yönlendiriliyorsunuz.";
-            header("Refresh: 3; url=login.php");
+            echo '<meta http-equiv="refresh" content="3;url=login.php">';
             die();
         }
         ?>

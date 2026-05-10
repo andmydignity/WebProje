@@ -22,7 +22,6 @@
       updateSlider();
     }
 
-    // Opsiyonel: 5 saniyede bir otomatik dönsün
     setInterval(nextSlide, 5000);
     </script>
   </head>

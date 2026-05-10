@@ -14,10 +14,12 @@
     $tel = htmlspecialchars($_POST['tel']);
     $mesaj = htmlspecialchars($_POST['mesaj']);
     $onay = htmlspecialchars($_POST['onay']);
+    $cinsiyet = htmlspecialchars($_POST['cinsiyet']);
     echo "Mesaj Türü: " . $tur . "<br>";
     echo "Email: " . $email . "<br>";
     echo "Telefon: " . $tel . "<br>";
     echo "Mesaj: " . $mesaj . "<br>";
+    echo "Cinsiyet: " . $cinsiyet . "<br>";
 
     ?>
 

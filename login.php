@@ -10,7 +10,12 @@
       let password=document.forms["form"]["password"].value;
       const nokta=email.split(".").length-1;
       const etIsaret=email.split("@").length-1;
-      if (nokta<1){
+      
+      if (email.length<1){
+          window.alert("Email boş");
+          return false;
+      }
+      else if (nokta<1){
         window.alert("Email'de . yok !");
         return false;
       }
@@ -33,7 +38,7 @@
     <h1 class="text-2xl text-center">Giriş Sayfası</h1>
     <div class="max-w-3xs mx-auto py-2"> 
     <form name="form" method="POST" class="flex flex-col justify-self-center items-center space-y-2" action="login_process.php" onsubmit="return kontrol()">
-      <input id="email" name="email" type="email" class="border-2 border-gray-200 rounded-xl p-1" required placeholder="E-posta">
+      <input id="email" name="email" type="email" class="border-2 border-gray-200 rounded-xl p-1" placeholder="E-posta">
       <input id="password" name="password" type="password" class="border-2 border-gray-200 rounded-xl p-1" required placeholder="Şifre">
       <input type="submit" class="p-1 border-2 border-gray-200 rounded-xl w-max justify-self-center" value="Giriş Yap">
       </form> 
